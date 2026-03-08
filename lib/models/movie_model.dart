@@ -177,4 +177,18 @@ List<MovieModel> movieList = [
         "https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     movieUrl: "https://en.wikipedia.org/wiki/Fight_Club",
   ),
+
+  MovieModel(
+    title: "Fast X",
+    year: 2023,
+    genre: "Action",
+    director: "Louis Leterrier",
+    casts: ["Vin Diesel", "Michelle Rodriguez", "Jordana Brewster"],
+    rating: 6.0,
+    synopsis:
+        "Dom Toretto and his family face their most formidable adversary yet: his own brother, Jakob, a deadly assassin who has teamed up with their old enemy, Cipher. As they race against time to stop a global threat, they must confront their past and fight for their future.",  
+    imgUrl:
+        "https://m.media-amazon.com/images/M/MV5BYzEwZjczOTktYzU1OS00YjJlLTgyY2UtNWEzODBlN2RjZDEwXkEyXkFqcGc@._V1_FMjpg_UY5000_.jpg",
+    movieUrl: "https://en.wikipedia.org/wiki/Fast_X",
+  ),
 ];
