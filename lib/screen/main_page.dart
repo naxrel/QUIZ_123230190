@@ -3,8 +3,7 @@ import 'package:latihan_kuis_a/screen/movie_list_page.dart';
 import 'package:latihan_kuis_a/screen/saved_page.dart';
 
 class MainPage extends StatefulWidget {
-  final String username;
-  const MainPage({super.key, required this.username});
+  const MainPage({super.key});
 
   @override
   State<MainPage> createState() => _MainPageState();
@@ -30,7 +29,6 @@ class _MainPageState extends State<MainPage> {
     //list page index tab
     final List<Widget> _pages = [
       MovieListPage(
-        username: widget.username,
         bookmarkedIndices: _bookmarkedIndices,
         onBookmarkToggle: _toggleBookmark,
       ),

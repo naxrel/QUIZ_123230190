@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../models/user.dart';
 import 'package:latihan_kuis_a/screen/main_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -13,11 +14,14 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController _passwordController = TextEditingController();
 
   void _handleLogin() {
-    if (_usernameController.text == '190' && _passwordController.text == '190') {
+    String username = _usernameController.text;
+    String password = _passwordController.text;
+
+    if (username == user1.username && password == user1.password) {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => MainPage(username: _usernameController.text),
+          builder: (context) => const MainPage(),
         ),
       );
     } else {

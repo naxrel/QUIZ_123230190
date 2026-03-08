@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_kuis_a/models/movie_model.dart';
+import 'package:latihan_kuis_a/models/user.dart';
 import 'package:latihan_kuis_a/widgets/movie_card.dart';
 
 class MovieListPage extends StatelessWidget {
-  final String username;
   //parameter untuk data dari MainPage
   final Set<int> bookmarkedIndices;
   final Function(int) onBookmarkToggle;
 
   const MovieListPage({
     super.key,
-    required this.username,
     required this.bookmarkedIndices,
     required this.onBookmarkToggle,
   });
@@ -25,7 +24,7 @@ class MovieListPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                "Welcome, $username!",
+                "Welcome, ${user1.nama}!",
                 style: const TextStyle(
                   fontSize: 20, 
                   fontWeight: FontWeight.bold, 
